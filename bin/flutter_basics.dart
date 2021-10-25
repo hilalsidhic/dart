@@ -38,4 +38,15 @@ Set<int> numSet = {1,2,3,3,4,5,5,5,6,6,6,77,7,7};
 print(numList);
 print(numSet);
 
+Map<String,String> maps={
+  'name':'hilal',
+  'age':'12'
+};
+print(maps['name']);
+
+var maps2={
+  'name':'hilal',
+  'age':21
+};
+print(maps2['age']);
 }
