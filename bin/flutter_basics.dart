@@ -29,4 +29,8 @@ newNumbers.add('new variable');
 print(newNumbers);
 newNumbers.removeAt(newNumbers.length-1);
 print(newNumbers);
+
+List<List<int>> dnums = [[1,2,3],[4,4,6],[9,9,1]];
+var dnums2= [[1,2,'three'],['yes',4,5,6]];
+print(dnums2[0][1]);
 }
