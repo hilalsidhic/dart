@@ -55,6 +55,7 @@ int newreturnt =sumreturn(4, 5);
 print(newreturnt);
 sumoptional(a:21,b:21);
 sumFunction(41,42,sumparams);
+sumFuture(23,32);
 }
 void sum() {
   print(2+3);
@@ -70,4 +71,8 @@ void sumoptional({required int a,required int b,var third}){
 }
 void sumFunction(int a, int b, void Function(int,int) customSum){
   customSum(a,b);
+}
+Future<void> sumFuture(int a, int b) async{
+  await Future.delayed(Duration(seconds: 3));
+  print('sum is ${a+b}');
 }
