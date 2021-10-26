@@ -33,20 +33,33 @@ void main() {
 // List<List<int>> dnums = [[1,2,3],[4,4,6],[9,9,1]];
 // var dnums2= [[1,2,'three'],['yes',4,5,6]];
 // print(dnums2[0][1]);
-List<int> numList = [1,2,3,3,4,5,5,5,6,6,6,77,7,7];
-Set<int> numSet = {1,2,3,3,4,5,5,5,6,6,6,77,7,7};
-print(numList);
-print(numSet);
+// List<int> numList = [1,2,3,3,4,5,5,5,6,6,6,77,7,7];
+// Set<int> numSet = {1,2,3,3,4,5,5,5,6,6,6,77,7,7};
+// print(numList);
+// print(numSet);
 
-Map<String,String> maps={
-  'name':'hilal',
-  'age':'12'
-};
-print(maps['name']);
+// Map<String,String> maps={
+//   'name':'hilal',
+//   'age':'12'
+// };
+// print(maps['name']);
 
-var maps2={
-  'name':'hilal',
-  'age':21
-};
-print(maps2['age']);
+// var maps2={
+//   'name':'hilal',
+//   'age':21
+// };
+// print(maps2['age']);
+sum();
+sumparams(3,5);
+int newreturnt =sumreturn(4, 5);
+print(newreturnt);
+}
+void sum() {
+  print(2+3);
+}
+void sumparams(int a, int b){
+  print('${a+b}');
+}
+int sumreturn(int a , int b){
+  return a+b;
 }
