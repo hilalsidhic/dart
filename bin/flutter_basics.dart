@@ -53,6 +53,8 @@ sum();
 sumparams(3,5);
 int newreturnt =sumreturn(4, 5);
 print(newreturnt);
+sumoptional(a:21,b:21);
+sumFunction(41,42,sumparams);
 }
 void sum() {
   print(2+3);
@@ -62,4 +64,10 @@ void sumparams(int a, int b){
 }
 int sumreturn(int a , int b){
   return a+b;
+}
+void sumoptional({required int a,required int b,var third}){
+  print(a + b);
+}
+void sumFunction(int a, int b, void Function(int,int) customSum){
+  customSum(a,b);
 }
