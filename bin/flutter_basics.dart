@@ -3,11 +3,19 @@ class Person {
   final String name;
   final int age;
   Person(this.name,this.age);
+  Person.ifnameisbig(this.name,this.age){
+    print(name);
+  }
+  Person.ifnameissmall(this.name,this.age){
+    print(name);
+  }
    
 }
 void main() {
 
   final person = Person('hilasdl',13);
+  final newperson = Person.ifnameisbig('firstname', 42);
+  final newperson2 = Person.ifnameissmall('lastname',12);
   print(person.name);
 
   // print("Hello World");
