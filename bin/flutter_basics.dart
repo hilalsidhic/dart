@@ -49,13 +49,22 @@ void main() {
 //   'age':21
 // };
 // print(maps2['age']);
-sum();
-sumparams(3,5);
-int newreturnt =sumreturn(4, 5);
-print(newreturnt);
-sumoptional(a:21,b:21);
-sumFunction(41,42,sumparams);
-sumFuture(23,32);
+// sum();
+// sumparams(3,5);
+// int newreturnt =sumreturn(4, 5);
+// print(newreturnt);
+// sumoptional(a:21,b:21);
+// sumFunction(41,42,sumparams);
+// sumFuture(23,32);
+final String number;
+number='hi';
+number='lo';
+final List<int> newNumbers;
+newNumbers=[3,3,4];
+newNumbers.add(4);
+newNumbers=[3,4,5];
+const ytnew='hi';
+ytnew='sdfs';
 }
 void sum() {
   print(2+3);
