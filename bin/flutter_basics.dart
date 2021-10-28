@@ -1,22 +1,14 @@
 import 'dart:io';
-class Person {
-  final String name;
-  final int age;
-  Person(this.name,this.age);
-  Person.ifnameisbig(this.name,this.age){
-    print(name);
-  }
-  Person.ifnameissmall(this.name,this.age){
-    print(name);
-  }
-   
-}
+import 'person.dart';
 void main() {
 
-  final person = Person('hilasdl',13);
-  final newperson = Person.ifnameisbig('firstname', 42);
-  final newperson2 = Person.ifnameissmall('lastname',12);
-  print(person.name);
+  // final person = Person('hilasdl',13);
+  // final newperson = Person.ifnameisbig('firstname', 42);
+  // final newperson2 = Person.ifnameissmall('lastname',12);
+  final person = Person();
+  print(person.getName());
+  print(person.getAge());
+  person.sayHi();
 
   // print("Hello World");
   // var a = stdin.readLineSync();
