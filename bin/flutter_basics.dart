@@ -1,12 +1,15 @@
 import 'dart:io';
 class Person {
   String? name;
-  int age=20;
+  int? age;
+  Person(String name, int age){
+    this.name=name;
+    this.age=age;
+  }
 }
 void main() {
 
-  final person = Person();
-  person.name = "hilal";
+  final person = Person('hilal',13);
   print(person.name);
 
   // print("Hello World");
