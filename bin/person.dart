@@ -1,6 +1,6 @@
 class Person {
   final String _name="John";
-  final int _age=20;
+   int _age=20;
   // Person(this.name,this.age);
   // Person.ifnameisbig(this.name,this.age){
   //   print(name);
@@ -8,14 +8,20 @@ class Person {
   // Person.ifnameissmall(this.name,this.age){
   //   print(name);
   // }
-  String getName() {
-    return _name;
+  int get helloage{
+    return _age;
   }
-  int getAge() {
-    return _age; 
+  set setage(int value) {
+    _age = value;
   }
-  void sayHi(){
-    print("hi");
-  }
+  // String getName() {
+  //   return _name;
+  // }
+  // int getAge() {
+  //   return _age; 
+  // }
+  // void sayHi(){
+  //   print("hi");
+  // }
    
 }

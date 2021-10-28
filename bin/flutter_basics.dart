@@ -6,9 +6,12 @@ void main() {
   // final newperson = Person.ifnameisbig('firstname', 42);
   // final newperson2 = Person.ifnameissmall('lastname',12);
   final person = Person();
-  print(person.getName());
-  print(person.getAge());
-  person.sayHi();
+  // print(person.getName());
+  // print(person.getAge());
+  // person.sayHi();
+  print(person.helloage);
+  person.setage=21;
+  print(person.helloage);
 
   // print("Hello World");
   // var a = stdin.readLineSync();
