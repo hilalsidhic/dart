@@ -1,6 +1,14 @@
 import 'dart:io';
-
+class Person {
+  String? name;
+  int age=20;
+}
 void main() {
+
+  final person = Person();
+  person.name = "hilal";
+  print(person.name);
+
   // print("Hello World");
   // var a = stdin.readLineSync();
   // print('Hello $a');
@@ -56,32 +64,34 @@ void main() {
 // sumoptional(a:21,b:21);
 // sumFunction(41,42,sumparams);
 // sumFuture(23,32);
-final String number;
-number='hi';
-number='lo';
-final List<int> newNumbers;
-newNumbers=[3,3,4];
-newNumbers.add(4);
-newNumbers=[3,4,5];
-const ytnew='hi';
-ytnew='sdfs';
+// final String number;
+// number='hi';
+// number='lo';
+// final List<int> newNumbers;
+// newNumbers=[3,3,4];
+// newNumbers.add(4);
+// newNumbers=[3,4,5];
+// const ytnew='hi';
+// ytnew='sdfs';
+
+
 }
-void sum() {
-  print(2+3);
-}
-void sumparams(int a, int b){
-  print('${a+b}');
-}
-int sumreturn(int a , int b){
-  return a+b;
-}
-void sumoptional({required int a,required int b,var third}){
-  print(a + b);
-}
-void sumFunction(int a, int b, void Function(int,int) customSum){
-  customSum(a,b);
-}
-Future<void> sumFuture(int a, int b) async{
-  await Future.delayed(Duration(seconds: 3));
-  print('sum is ${a+b}');
-}
+// void sum() {
+//   print(2+3);
+// }
+// void sumparams(int a, int b){
+//   print('${a+b}');
+// }
+// int sumreturn(int a , int b){
+//   return a+b;
+// }
+// void sumoptional({required int a,required int b,var third}){
+//   print(a + b);
+// }
+// void sumFunction(int a, int b, void Function(int,int) customSum){
+//   customSum(a,b);
+// }
+// Future<void> sumFuture(int a, int b) async{
+//   await Future.delayed(Duration(seconds: 3));
+//   print('sum is ${a+b}');
+// }
