@@ -1,17 +1,38 @@
 import 'dart:io';
-import 'person.dart';
+// import 'person.dart';
+class Animals {
+  void sayhello() {
+    print("say hello");
+  }
+}
+class Humans extends Animals {
+  void sayhi() {
+    print("say hi");
+  }
+  @override
+  void sayhello(){
+    print("say hello humans");
+    super.sayhello();
+  }
+}
 void main() {
+
+var human = Humans();
+human.sayhello();
+human.sayhi();
+
+
 
   // final person = Person('hilasdl',13);
   // final newperson = Person.ifnameisbig('firstname', 42);
   // final newperson2 = Person.ifnameissmall('lastname',12);
-  final person = Person();
-  // print(person.getName());
-  // print(person.getAge());
-  // person.sayHi();
-  print(person.helloage);
-  person.setage=21;
-  print(person.helloage);
+  // final person = Person();
+  // // print(person.getName());
+  // // print(person.getAge());
+  // // person.sayHi();
+  // print(person.helloage);
+  // person.setage=21;
+  // print(person.helloage);
 
   // print("Hello World");
   // var a = stdin.readLineSync();
