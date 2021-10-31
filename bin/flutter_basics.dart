@@ -1,25 +1,30 @@
 import 'dart:io';
 // import 'person.dart';
-class Animals {
-  void sayhello() {
-    print("say hello");
-  }
+abstract class Animals {
+  void sayhello();
 }
-class Humans extends Animals {
-  void sayhi() {
-    print("say hi");
-  }
+class Humans implements Animals{
   @override
-  void sayhello(){
-    print("say hello humans");
-    super.sayhello();
+  void sayhello() {
+    print("Hello");
   }
 }
+
+// class Humans extends Animals {
+//   void sayhi() {
+//     print("say hi");
+//   }
+//   @override
+//   void sayhello(){
+//     print("say hello humans");
+//     super.sayhello();
+//   }
+// }
 void main() {
 
 var human = Humans();
 human.sayhello();
-human.sayhi();
+// human.sayhi();
 
 
 
