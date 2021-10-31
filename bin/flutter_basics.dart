@@ -10,21 +10,21 @@ import 'dart:io';
 //   }
 // }
 
-mixin Animal1{
-  int num=0;
-  void sayhello1(){
-    print("Hello from animal 1");
-  }
-}
-mixin Animal2{
-  int num=0;
-  void sayhello2(){
-    print("Hello from animal 2");
-  }
-}
-class Human with Animal1,Animal2{
+// mixin Animal1{
+//   int num=0;
+//   void sayhello1(){
+//     print("Hello from animal 1");
+//   }
+// }
+// mixin Animal2{
+//   int num=0;
+//   void sayhello2(){
+//     print("Hello from animal 2");
+//   }
+// }
+// class Human with Animal1,Animal2{
 
-}
+// }
 // class Humans extends Animals {
 //   void sayhi() {
 //     print("say hi");
@@ -35,12 +35,31 @@ class Human with Animal1,Animal2{
 //     super.sayhello();
 //   }
 // }
+class invalidphone implements Exception{}
+
+bool? phonenoVALID(String phoneno){
+  if(phoneno.length == 10){
+    return true;
+  }
+  else{
+    throw invalidphone();
+  }
+}
 void main() {
 
-var human = Human();
-human.sayhello1();
-human.sayhello2();
-// human.sayhi();
+// var human = Human();
+// human.sayhello1();
+// human.sayhello2();
+// // human.sayhi();
+try {
+var checkValidPhone = phonenoVALID("1212dfsdf3");
+print(checkValidPhone);
+}on invalidphone catch (e){
+  print("invalid phone number present");
+}
+ catch (e) {
+  print(e);
+}
 
 
 
