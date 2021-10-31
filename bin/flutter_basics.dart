@@ -1,15 +1,30 @@
 import 'dart:io';
 // import 'person.dart';
-abstract class Animals {
-  void sayhello();
-}
-class Humans implements Animals{
-  @override
-  void sayhello() {
-    print("Hello");
+// abstract class Animals {
+//   void sayhello();
+// }
+// class Humans implements Animals{
+//   @override
+//   void sayhello() {
+//     print("Hello");
+//   }
+// }
+
+mixin Animal1{
+  int num=0;
+  void sayhello1(){
+    print("Hello from animal 1");
   }
 }
+mixin Animal2{
+  int num=0;
+  void sayhello2(){
+    print("Hello from animal 2");
+  }
+}
+class Human with Animal1,Animal2{
 
+}
 // class Humans extends Animals {
 //   void sayhi() {
 //     print("say hi");
@@ -22,8 +37,9 @@ class Humans implements Animals{
 // }
 void main() {
 
-var human = Humans();
-human.sayhello();
+var human = Human();
+human.sayhello1();
+human.sayhello2();
 // human.sayhi();
 
 
